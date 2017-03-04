@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Croco rules</title>
-</head>
-<body>
-	<header>
-		<h1 class="page-name">Смотри, я делаю сайт</h1>
-	</header>
-	<main>
+{% extends 'blog/base.html' %}
+{% block content %}
 	{% for post in posts %}
-		<div class="post">
-			<span class="post__date">published: {{ post.published_date }}</span>
-			<h2 class="post__name">
-				<a class="post__link">{{ post.title }}</a>
-			</h2>
-			<p class="post__text">{{ post.text|linebreaksbr }}</p>
+		<div class="content-container">
+			<div class="post clearfix">
+				<span class="post__date">published: {{ post.published_date }}</span>
+				<h2 class="post__name">
+					<a class="post__link" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+				</h2>
+				<div class="post__img">
+				</div>
+				<p class="post__text">{{ post.text|linebreaksbr }}</p>
+			</div>
 		</div>
 	{% endfor %}
-	</main>
-</body>
-</html>
+{% endblock content %}

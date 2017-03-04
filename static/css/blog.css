@@ -1,0 +1,32 @@
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: 14px;
+	font-weight: normal;
+}
+.content-container {
+	width: 900px;
+	margin: 0 auto;
+}
+.page-name {
+	font-size: 20px;
+	font-family: 'Lobster';
+	color: #9400d3;
+}
+.post {
+	background: url('http://www.tdd-django-tutorial.com/static/images/django_pony2.png') repeat 0 0;
+	opacity: 0.5;
+	margin-bottom: 20px;
+}
+.post__date {
+	font-size: 14px;
+	color: #323332;
+}
+.post__name {
+	font-family: 'Lobster';
+}
+.post__img {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: pink;
+}

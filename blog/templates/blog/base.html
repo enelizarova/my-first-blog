@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Croco rules</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+	<header class="main-header">
+		<div class="content-container">
+			<h1 class="page-name">Смотри, я делаю сайт</h1>
+		</div>
+	</header>
+	<main>
+		{% block content %}
+    {% endblock %}
+	</main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content-container {
+	width: 900px;
+	margin: 0 auto;
+}
+.post {
+	background: rgba(138, 43, 226, 0.2);
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.main-header {
+	text-align: center;
+}
+.page-name {
+	font-size: 40px;
+	font-family: 'Lobster';
+	color: #9400d3;
+}
+.post__date {
+	font-size: 14px;
+	color: #323332;
+}
+.post__name {
+	font-family: 'Lobster';
+}
+.post__img {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: url('http://www.tdd-django-tutorial.com/static/images/django_pony2.png') no-repeat center;
+	float: left;
+	margin-right: 50px;
+}
+.post__img--big {
+	width: 150px;
+	height: 150px;
+}
+.post__text {
+	float: left;
+	width: 500px;
+}

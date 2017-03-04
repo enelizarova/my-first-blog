@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+    {% block content %}
+        <div class="post clearfix">
+            {% if post.published_date %}
+                <span class="post__date">
+                    {{ post.published_date }}
+                </span>
+            {% endif %}
+            <h2 class="post__name">{{ post.title }}</h2>
+            <div class="post__img post__img--big">
+            </div>
+            <p class="post__text">{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endblock %}
